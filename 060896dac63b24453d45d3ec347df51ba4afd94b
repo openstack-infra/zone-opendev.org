@@ -1,0 +1,9 @@
+Code-Review+2: Clark Boylan <cboylan@sapwetik.org>
+Code-Review+2: Jens Harbott (frickler) <j.harbott@x-ion.de>
+Workflow+1: Jens Harbott (frickler) <j.harbott@x-ion.de>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Thu, 10 Jan 2019 14:10:23 +0000
+Reviewed-on: https://review.openstack.org/629657
+Project: openstack-infra/zone-opendev.org
+Branch: refs/heads/master
