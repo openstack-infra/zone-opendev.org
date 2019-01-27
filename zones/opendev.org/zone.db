@@ -2,7 +2,7 @@
 $ORIGIN opendev.org.
 $TTL 5m
 @		IN	SOA	adns1.opendev.org. hostmaster.opendev.org. (
-			1547065248  ; serial number unixtime
+			1548610407  ; serial number unixtime
 			1h          ; refresh (secondary checks for updates)
 			10m         ; retry   (secondary retries failed axfr)
 			10d         ; expire  (secondary ends serving old data)
@@ -21,5 +21,7 @@ ns2		IN	A	162.253.55.16
 ns2		IN	AAAA	2604:e100:1:0:f816:3eff:fe2c:7447
 storyboard-dev01	IN	A	23.253.234.105
 storyboard-dev01	IN	AAAA	2001:4800:7817:103:be76:4eff:fe04:93f6
+storyboard01	IN	A	162.209.77.101
+storyboard01	IN	AAAA	2001:4800:7818:103:be76:4eff:fe04:976a
 www		IN	A	23.253.125.17
 www		IN	AAAA	2001:4800:7817:103:be76:4eff:fe04:e3e3
