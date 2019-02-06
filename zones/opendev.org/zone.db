@@ -2,7 +2,7 @@
 $ORIGIN opendev.org.
 $TTL 5m
 @		IN	SOA	adns1.opendev.org. hostmaster.opendev.org. (
-			1549401867  ; serial number unixtime
+			1549475272  ; serial number unixtime
 			1h          ; refresh (secondary checks for updates)
 			10m         ; retry   (secondary retries failed axfr)
 			10d         ; expire  (secondary ends serving old data)
@@ -29,3 +29,4 @@ zuul		IN	CNAME	zuul01.openstack.org.
 insecure-ci-registry01	IN	AAAA	2001:4800:7818:101:be76:4eff:fe04:67f5
 insecure-ci-registry01	IN	A	104.130.132.79
 insecure-ci-registry	IN	CNAME	insecure-ci-registry01
+_BC79656284FD79EEFAA2324D9A21F8F2.insecure-ci-registry	IN	CNAME	15FA1F199862E630C00921F9829058F1.08EDD8CA444595999FE1E3D41FF9F72B.5c5b1d1c03fd6.comodoca.com.
