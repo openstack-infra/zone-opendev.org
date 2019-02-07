@@ -9,8 +9,7 @@ $TTL 5m
 			5m  )       ; min ttl (cache time for failed lookups)
 @		IN	NS	ns1.opendev.org.
 @		IN	NS	ns2.opendev.org.
-@		IN	A	23.253.125.17
-@		IN	AAAA	2001:4800:7817:103:be76:4eff:fe04:e3e3
+@		IN	A	38.108.68.64
 adns1		IN	A	104.239.146.24
 adns1		IN	AAAA	2001:4800:7819:104:be76:4eff:fe04:43d0
 lists		IN	A	50.56.173.222
@@ -23,8 +22,7 @@ storyboard-dev01	IN	A	23.253.234.105
 storyboard-dev01	IN	AAAA	2001:4800:7817:103:be76:4eff:fe04:93f6
 storyboard01	IN	A	162.209.77.101
 storyboard01	IN	AAAA	2001:4800:7818:103:be76:4eff:fe04:976a
-www		IN	A	23.253.125.17
-www		IN	AAAA	2001:4800:7817:103:be76:4eff:fe04:e3e3
+www		IN	A	38.108.68.64
 zuul		IN	CNAME	zuul01.openstack.org.
 insecure-ci-registry01	IN	AAAA	2001:4800:7818:101:be76:4eff:fe04:67f5
 insecure-ci-registry01	IN	A	104.130.132.79
