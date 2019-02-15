@@ -34,3 +34,6 @@ opendev-k8s-1	IN	A	38.108.68.70
 opendev-k8s-2	IN	A	38.108.68.90
 opendev-k8s-3	IN	A	38.108.68.72
 opendev-k8s-4	IN	A	38.108.68.125
+pbx		IN	CNAME	pbx01.opendev.org.
+pbx01		IN	A	104.239.146.91
+pbx01		IN	AAAA	2001:4800:7819:104:be76:4eff:fe04:b06f
