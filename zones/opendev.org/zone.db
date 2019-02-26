@@ -2,7 +2,7 @@
 $ORIGIN opendev.org.
 $TTL 5m
 @		IN	SOA	adns1.opendev.org. hostmaster.opendev.org. (
-			1551220750 ; serial number unixtime
+			1551225297  ; serial number unixtime
 			1h          ; refresh (secondary checks for updates)
 			10m         ; retry   (secondary retries failed axfr)
 			10d         ; expire  (secondary ends serving old data)
@@ -19,8 +19,8 @@ ns2		IN	AAAA	2604:e100:1:0:f816:3eff:fe2c:7447
 
 ; Entries are alphabetical below here to reduce conflicts (note the serial
 ; will continue to conflict)
-graphite01		IN	A	104.130.138.88
-graphite01		IN	AAAA	2001:4800:7818:103:be76:4eff:fe00:beac
+graphite01		IN	A	162.209.77.51
+graphite01		IN	AAAA	2001:4800:7818:103:be76:4eff:fe04:763e
 graphite		IN	CNAME	graphite01.opendev.org.
 insecure-ci-registry01	IN	AAAA	2001:4800:7818:101:be76:4eff:fe04:67f5
 insecure-ci-registry01	IN	A	104.130.132.79
