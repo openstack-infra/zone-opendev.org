@@ -19,6 +19,8 @@ ns2		IN	AAAA	2604:e100:1:0:f816:3eff:fe2c:7447
 
 ; Entries are alphabetical below here to reduce conflicts (note the serial
 ; will continue to conflict)
+health01		IN	A	23.253.236.45
+health01		IN	AAAA	2001:4800:7817:103:be76:4eff:fe04:3959
 insecure-ci-registry01	IN	AAAA	2001:4800:7818:101:be76:4eff:fe04:67f5
 insecure-ci-registry01	IN	A	104.130.132.79
 insecure-ci-registry	IN	CNAME	insecure-ci-registry01
