@@ -2,7 +2,7 @@
 $ORIGIN opendev.org.
 $TTL 5m
 @		IN	SOA	adns1.opendev.org. hostmaster.opendev.org. (
-			1551225297  ; serial number unixtime
+			1551372603  ; serial number unixtime
 			1h          ; refresh (secondary checks for updates)
 			10m         ; retry   (secondary retries failed axfr)
 			10d         ; expire  (secondary ends serving old data)
@@ -19,6 +19,15 @@ ns2		IN	AAAA	2604:e100:1:0:f816:3eff:fe2c:7447
 
 ; Entries are alphabetical below here to reduce conflicts (note the serial
 ; will continue to conflict)
+gitea-lb01		IN	A	38.108.68.124
+gitea01			IN	A	38.108.68.93
+gitea02			IN	A	38.108.68.122
+gitea03			IN	A	38.108.68.133
+gitea04			IN	A	38.108.68.115
+gitea05			IN	A	38.108.68.55
+gitea06			IN	A	38.108.68.130
+gitea07			IN	A	38.108.68.86
+gitea08			IN	A	38.108.68.22
 graphite01		IN	A	162.209.77.51
 graphite01		IN	AAAA	2001:4800:7818:103:be76:4eff:fe04:763e
 graphite		IN	CNAME	graphite01.opendev.org.
