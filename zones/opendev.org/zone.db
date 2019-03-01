@@ -2,14 +2,14 @@
 $ORIGIN opendev.org.
 $TTL 5m
 @			IN	SOA	adns1.opendev.org. hostmaster.opendev.org. (
-				1551457513  ; serial number unixtime
+				1551459781  ; serial number unixtime
 				1h          ; refresh (secondary checks for updates)
 				10m         ; retry   (secondary retries failed axfr)
 				10d         ; expire  (secondary ends serving old data)
 				5m  )       ; min ttl (cache time for failed lookups)
 @			IN	NS	ns1.opendev.org.
 @			IN	NS	ns2.opendev.org.
-@			IN	A	38.108.68.64
+@			IN	A	38.108.68.124
 adns1			IN	A	104.239.146.24
 adns1			IN	AAAA	2001:4800:7819:104:be76:4eff:fe04:43d0
 ns1			IN	A	104.239.140.165
