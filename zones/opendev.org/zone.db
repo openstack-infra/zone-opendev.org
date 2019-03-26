@@ -2,7 +2,7 @@
 $ORIGIN opendev.org.
 $TTL 5m
 @			IN	SOA	adns1.opendev.org. hostmaster.opendev.org. (
-				1553620257  ; serial number unixtime
+				1553620549  ; serial number unixtime
 				1h          ; refresh (secondary checks for updates)
 				10m         ; retry   (secondary retries failed axfr)
 				10d         ; expire  (secondary ends serving old data)
@@ -57,6 +57,3 @@ zuul-preview		IN	AAAA	2001:4800:7819:104:be76:4eff:fe04:815a
 ; letsencrypt challenge cname
 _acme-challenge.graphite01.opendev.org  IN      CNAME acme.opendev.org
 _acme-challenge.graphite.opendev.org    IN      CNAME acme.opendev.org
-
-_E6C6C82D906ABFBA23FC77A4645477FD.docs	IN		CNAME	B6078EF687B081FBCF5BEB6C32E102F5.2D57A6B1E8BB9929BBBECEAFA4EC9516.5c9a5bc58038b.comodoca.com.
-_9C94F43DDEA8828B78B122A0791C2E9D.review	IN		CNAME	8C25EAE1863480C8E0B26D10BBCFCBC6.D93E9E7EE17F919C7726DC9A24E95C45.5c9a5c20d21e9.comodoca.com.
