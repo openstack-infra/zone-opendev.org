@@ -2,7 +2,7 @@
 $ORIGIN opendev.org.
 $TTL 5m
 @			IN	SOA	adns1.opendev.org. hostmaster.opendev.org. (
-				1555627227  ; serial number unixtime
+				1557286368  ; serial number unixtime
 				1h          ; refresh (secondary checks for updates)
 				10m         ; retry   (secondary retries failed axfr)
 				10d         ; expire  (secondary ends serving old data)
@@ -37,6 +37,8 @@ gitea08			IN	A	38.108.68.22
 graphite01		IN	A	162.209.77.51
 graphite01		IN	AAAA	2001:4800:7818:103:be76:4eff:fe04:763e
 graphite		IN	CNAME	graphite01
+graphite		IN	CAA	0	issue	"letsencrypt.org"
+graphite		IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
 insecure-ci-registry01	IN	AAAA	2001:4800:7818:101:be76:4eff:fe04:67f5
 insecure-ci-registry01	IN	A	104.130.132.79
 insecure-ci-registry	IN	CNAME	insecure-ci-registry01
