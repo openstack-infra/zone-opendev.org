@@ -2,7 +2,7 @@
 $ORIGIN opendev.org.
 $TTL 5m
 @			IN	SOA	adns1.opendev.org. hostmaster.opendev.org. (
-				1553834863  ; serial number unixtime
+				1555442317  ; serial number unixtime
 				1h          ; refresh (secondary checks for updates)
 				10m         ; retry   (secondary retries failed axfr)
 				10d         ; expire  (secondary ends serving old data)
@@ -48,6 +48,9 @@ opendev-k8s-master	IN	A	38.108.68.20
 pbx			IN	CNAME	pbx01
 pbx01			IN	A	104.239.146.91
 pbx01			IN	AAAA	2001:4800:7819:104:be76:4eff:fe04:b06f
+review01		IN	A	104.130.246.32
+review01		IN	AAAA	2001:4800:7819:103:be76:4eff:fe04:9229
+review			IN	CNAME	review01
 storyboard01		IN	A	162.209.77.101
 storyboard01		IN	AAAA	2001:4800:7818:103:be76:4eff:fe04:976a
 storyboard-dev01	IN	A	23.253.234.105
@@ -61,3 +64,5 @@ zuul-preview		IN	AAAA	2001:4800:7819:104:be76:4eff:fe04:815a
 ; letsencrypt challenge cname
 _acme-challenge.graphite01	IN	CNAME acme.opendev.org.
 _acme-challenge.graphite	IN	CNAME acme.opendev.org.
+_acme-challenge.review01	IN	CNAME acme.opendev.org.
+_acme-challenge.review		IN	CNAME acme.opendev.org.
