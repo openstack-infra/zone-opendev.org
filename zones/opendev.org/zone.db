@@ -2,7 +2,7 @@
 $ORIGIN opendev.org.
 $TTL 5m
 @			IN	SOA	adns1.opendev.org. hostmaster.opendev.org. (
-				1557286368  ; serial number unixtime
+				1557303921  ; serial number unixtime
 				1h          ; refresh (secondary checks for updates)
 				10m         ; retry   (secondary retries failed axfr)
 				10d         ; expire  (secondary ends serving old data)
@@ -70,3 +70,132 @@ _acme-challenge.graphite01	IN	CNAME acme.opendev.org.
 _acme-challenge.graphite	IN	CNAME acme.opendev.org.
 _acme-challenge.review01	IN	CNAME acme.opendev.org.
 _acme-challenge.review		IN	CNAME acme.opendev.org.
+
+;; mirrors
+
+; arm64ci
+mirror01.nrt1.arm64ci			IN	A	136.144.53.28
+mirror.nrt1.arm64ci			IN	CNAME	mirror01.nrt.arm64.ci
+_acme-challenge.mirror.nrt1.arm64ci	IN	CNAME	acme.opendev.org
+_acme-challenge.mirror01.nrt1.arm64ci	IN	CNAME	acme.opendev.org
+mirror01.nrt.arm64ci			IN	CAA	0	issue	"letsencrypt.org"
+mirror01.nrt1.arm64ci			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+; citycloud
+mirror01.kna1.citycloud			IN	A	91.123.202.253
+mirror.kna1.citycloud			IN	CNAME	mirror01.kna1.citycloud
+_acme-challenge.mirror01.kna1.citycloud	IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.kna1.citycloud	IN	CNAME	acme.opendev.org.
+mirror01.kna1.citycloud			IN	CAA	0	issue	"letsencrypt.org"
+mirror01.kna1.citycloud			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+mirror01.la1.citycloud			IN	A	89.42.141.47
+mirror.la1.citycloud			IN	CNAME	mirror01.la1.citycloud
+_acme-challenge.mirror01.la1.citycloud	IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.la1.citycloud	IN	CNAME	acme.opendev.org.
+mirror01.la1.citycloud			IN	CAA	0	issue	"letsencrypt.org"
+mirror01.la1.citycloud			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+mirror01.lon1.citycloud			IN	A	37.153.172.158
+mirror.lon1.citycloud			IN	CNAME	mirror01.lon1.citycloud
+_acme-challenge.mirror01.lon1.citycloud	IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.lon1.citycloud	IN	CNAME	acme.opendev.org.
+mirror01.lon1.citycloud			IN	CAA	0	issue	"letsencrypt.org"
+mirror01.lon1.citycloud			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+mirror01.sto2.citycloud			IN	A	77.81.189.96
+mirror.sto2.citycloud			IN	CNAME	mirror01.sto2.citycloud
+_acme-challenge.mirror01.sto2.citycloud	IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.sto2.citycloud	IN	CNAME	acme.opendev.org.
+mirror01.sto2.citycloud			IN	CAA	0	issue	"letsencrypt.org"
+mirror01.sto2.citycloud			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+; inap
+mirror01.mtl01.inap			IN	A	198.72.125.9
+mirror.mtl01.inap			IN	CNAME	mirror01.mtl01.inap
+_acme-challenge.mirror01.mtl01.inap	IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.mtl01.inap	IN	CNAME	acme.opendev.org.
+mirror01.mtl01.inap			IN	CAA	0	issue	"letsencrypt.org"
+mirror01.mtl01.inap			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+
+; linaro-london
+mirror01.london.linaro-london			IN	A	213.146.141.37
+mirror.london.linaro-london			IN	CNAME	mirror01.london.linaro-london
+_acme-challenge.mirror01.london.linaro-london	IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.london.linaro-london	IN	CNAME	acme.opendev.org.
+mirror01.london.linaro-london			IN	CAA	0	issue	"letsencrypt.org"
+mirror01.london.linaro-london			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+; limestone
+mirror02.regionone.limestone 			IN	AAAA	2607:ff68:100:54:f816:3eff:febd:b93
+mirror02.regionone.limestone 			IN	A	216.245.200.132
+mirror.regionone.lime				IN	CNAME	mirror02.regionone.lime
+_acme-challenge.mirror01.regionone.limestone	IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.regionone.limestone	IN	CNAME	acme.opendev.org.
+mirror01.regionone.limestone			IN	CAA	0	issue	"letsencrypt.org"
+mirror01.regionone.limestone			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+; ovh
+mirror01.bhs1.ovh			IN	A	158.69.80.87
+mirror.bhs1.ovh                 	IN	CNAME	mirror01.bhs1.ovh
+_acme-challenge.mirror01.bhs1.ovh	IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.bhs1.ovh		IN	CNAME	acme.opendev.org.
+mirror01.bhs1.ovh			IN	CAA	0	issue	"letsencrypt.org"
+mirror01.bhs1.ovh			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+mirror01.gra1.ovh			IN	A	147.135.133.8
+mirror.gra1.ovh				IN	CNAME	mirror01.gra1.ovh
+_acme-challenge.mirror01.bhs1.ovh	IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.bhs1.ovh		IN	CNAME	acme.opendev.org.
+mirror01.bhs1.ovh			IN	CAA	0	issue	"letsencrypt.org"
+mirror01.bhs1.ovh			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+; rackspace
+mirror02.dfw.rax			IN	AAAA	2001:4800:7817:103:be76:4eff:fe04:652a
+mirror02.dfw.rax			IN	A	23.253.125.45
+mirror.dfw.rax				IN	CNAME	mirror02.dfw.rax
+_acme-challenge.mirror02.dfw.rax	IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.dfw.rax		IN	CNAME	acme.opendev.org.
+mirror02.dfw.rax			IN	CAA	0	issue	"letsencrypt.org"
+mirror02.dfw.rax			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+mirror01.iad.rax			IN	AAAA	2001:4802:7807:103:be76:4eff:fe20:53f8
+mirror01.iad.rax			IN	A	146.20.105.102
+mirror.iad.rax				IN 	CNAME	mirror01.iad.rax
+_acme-challenge.mirror01.iad.rax	IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.iad.rax		IN	CNAME	acme.opendev.org.
+mirror01.iad.rax			IN	CAA	0	issue	"letsencrypt.org"
+mirror01.iad.rax			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+mirror01.ord.rax			IN	AAAA	2001:4801:7828:104:be76:4eff:fe10:4d48
+mirror01.ord.rax			IN	A	104.239.192.5
+mirror.ord.rax				IN 	CNAME	mirror01.ord.rax
+_acme-challenge.mirror01.ord.rax	IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.ord.rax		IN	CNAME	acme.opendev.org.
+mirror01.ord.rax			IN	CAA	0	issue	"letsencrypt.org"
+mirror01.ord.rax			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+; vexxhost
+mirror01.ca-ymq-1.vexxhost			IN	AAAA	2604:e100:1:0:f816:3eff:fee2:d1d6
+mirror01.ca-ymq-1.vexxhost			IN	A	162.253.55.61
+mirror.ca-ymq-1.vexxhhost			IN	CNAME	mirror.ca-ymq-1.vexxhost
+_acme-challenge.mirror01.ca-ymq-1.vexxhost	IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.ca-ymq-1.vexxhost	IN	CNAME	acme.opendev.org.
+mirror01.ca-ymq-1.vexxhost			IN	CAA	0	issue	"letsencrypt.org"
+mirror01.ca-ymq-1.vexxhost			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+mirror02.ca-ymq-1.vexxhost			IN	AAAA	2604:e100:1:0:f816:3eff:fef6:cc49
+mirror02.ca-ymq-1.vexxhost			IN	A	199.204.45.49
+mirror.ca-ymq-1.vexxhhost			IN	CNAME	mirror.ca-ymq-1.vexxhhost
+_acme-challenge.mirror01.ca-ymq-1.vexxhost	IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.ca-ymq-1.vexxhost	IN	CNAME	acme.opendev.org.
+mirror02.ca-ymq-1.vexxhost			IN	CAA	0	issue	"letsencrypt.org"
+mirror02.ca-ymq-1.vexxhost			IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
+
+mirror01.sjc1.vexxhost				IN	A	38.108.68.37
+mirror.sjc1.vexxhost				IN	CNAME	mirror01.sjc1.vexxhost
+_acme-challenge.mirror01.sjc1.vexxhost		IN	CNAME	acme.opendev.org.
+_acme-challenge.mirror.sjc1.vexxhost		IN	CNAME	acme.opendev.org.
+mirror01.sjc1.vexxhost				IN	CAA	0	issue	"letsencrypt.org"
+mirror01.sjc1.vexxhost				IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
