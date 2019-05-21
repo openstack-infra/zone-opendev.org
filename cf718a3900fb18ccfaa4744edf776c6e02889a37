@@ -1,0 +1,9 @@
+Code-Review+2: Clark Boylan <cboylan@sapwetik.org>
+Code-Review+2: Jeremy Stanley <fungi@yuggoth.org>
+Workflow+1: Ian Wienand <iwienand@redhat.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Tue, 21 May 2019 23:17:26 +0000
+Reviewed-on: https://review.opendev.org/660235
+Project: openstack-infra/zone-opendev.org
+Branch: refs/heads/master
