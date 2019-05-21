@@ -2,7 +2,7 @@
 $ORIGIN opendev.org.
 $TTL 5m
 @			IN	SOA	adns1.opendev.org. hostmaster.opendev.org. (
-				1557286368  ; serial number unixtime
+				1558399857  ; serial number unixtime
 				1h          ; refresh (secondary checks for updates)
 				10m         ; retry   (secondary retries failed axfr)
 				10d         ; expire  (secondary ends serving old data)
@@ -70,3 +70,12 @@ _acme-challenge.graphite01	IN	CNAME acme.opendev.org.
 _acme-challenge.graphite	IN	CNAME acme.opendev.org.
 _acme-challenge.review01	IN	CNAME acme.opendev.org.
 _acme-challenge.review		IN	CNAME acme.opendev.org.
+
+; mirrors
+mirror01.dfw.rax			IN	A	104.239.150.37
+mirror01.dfw.rax			IN	AAAA	2001:4800:7819:105:be76:4eff:fe04:9b8a
+mirror.dfw.rax				IN	CNAME	mirror01.dfw.rax
+_acme-challenge.mirror01.dfw.rax	IN	CNAME	acme.opendev.org
+_acme-challenge.mirror.dfw.rax		IN	CNAME	acme.opendev.org
+mirror.dfw.rax				IN	CAA	0	issue	"letsencrypt.org"
+mirror.dfw.rax				IN	CAA	0	iodef	"mailto:infra-root@openstack.org"
