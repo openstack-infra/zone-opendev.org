@@ -1,0 +1,9 @@
+Code-Review+2: Ian Wienand <iwienand@redhat.com>
+Code-Review+2: Clark Boylan <cboylan@sapwetik.org>
+Workflow+1: Clark Boylan <cboylan@sapwetik.org>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Tue, 21 May 2019 00:17:00 +0000
+Reviewed-on: https://review.opendev.org/652280
+Project: openstack-infra/zone-opendev.org
+Branch: refs/heads/master
