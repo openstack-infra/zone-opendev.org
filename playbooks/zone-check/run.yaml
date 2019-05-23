@@ -1,0 +1,21 @@
+- hosts: all
+  name: Run zone check
+  tasks:
+
+    - name: Install bind9utils
+      package:
+        name: bind9utils
+        state: present
+      become: yes
+
+    - name: Find zone files
+      find:
+        paths: '{{ ansible_user_dir }}/{{ zuul.project.src_dir }}'
+        patterns: 'zone.db'
+        recurse: yes
+        file_type: 'file'
+      register: zone_files
+
+    - name: 'Run checkzone'
+      command: '/usr/sbin/named-checkzone {{ item.path.split("/")[-2] }} {{ item.path }}'
+      loop: "{{ zone_files['files'] }}"
