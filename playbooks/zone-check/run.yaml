@@ -1,0 +1,12 @@
+- hosts: all
+  name: Run zone check
+  tasks:
+
+    - name: Install bind9utils
+      package:
+        name: bind9utils
+        state: present
+      become: yes
+
+    - name: Run checkzone
+      command: '/usr/sbin/named-checkzone opendev.org {{ ansible_user_dir }}/{{ zuul.project.src_dir }}/zones/opendev.org/zone.db'
