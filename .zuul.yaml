@@ -1,7 +1,12 @@
 - project:
     check:
       jobs:
-        - noop
+        - zone-check
     gate:
       jobs:
-        - noop
+        - zone-check
+
+- job:
+    name: zone-check
+    parent: base
+    run: playbooks/zone-check/run.yaml

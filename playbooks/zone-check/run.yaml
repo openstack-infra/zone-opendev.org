@@ -1,0 +1,4 @@
+- hosts: all
+  name: Run zone check
+  roles:
+    - validate-zone-db
